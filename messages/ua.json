@@ -1,6 +1,10 @@
 {
     "Index": {
-      "title": "Вітаю!",
-      "subtitle" : "Це підзаголовок"
+      "homeLink": "Головна",
+      "aboutLink": "Про мене",
+      "projectsLink": "Проекти",
+      "skillsLink": "Навички",
+      "experienceLink": "Досвід",
+      "contactLink": "Контакти"
     }
   }

@@ -1,6 +1,10 @@
 {
     "Index": {
-      "title": "Hello world!",
-      "subtitle" : "This is a subtitle"  
+      "homeLink": "Home",
+      "aboutLink": "About",
+      "projectsLink": "Projects",
+      "skillsLink": "Skills",
+      "experienceLink": "Experience",
+      "contactLink": "Contact" 
     }
   }
