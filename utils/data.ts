@@ -1,11 +1,11 @@
-type links = {
-    id: string;
-    name: string;
-    hash: string;
+export type LinkProps = {
+  id: string;
+  name: string;
+  hash: string;
 };
 
 
-export const links = [
+export const links: LinkProps[] = [
     {
       id: 'homeLink',
       name: 'Home',

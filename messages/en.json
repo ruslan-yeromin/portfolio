@@ -1,10 +1,23 @@
 {
-    "Index": {
+    "Header": {
       "homeLink": "Home",
       "aboutLink": "About",
       "projectsLink": "Projects",
       "skillsLink": "Skills",
       "experienceLink": "Experience",
       "contactLink": "Contact" 
+    },
+    "Hero": {
+      "textStart": "Hi there! I'm",
+      "name": "Ruslan",
+      "textMiddle": "With 3 years under my belt, I specialize in",
+      "specialization": "front-end development",
+      "textTech": "using ",
+      "tech": "React (Next.js) & TypeScript",
+      "textEnd": "I aim to create",
+      "experience": "engaging digital experiences",
+      "buttonContact": "Contact me",
+      "buttonCV": "Download CV"
     }
+    
   }

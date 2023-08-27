@@ -1,6 +1,5 @@
 import Link from 'next-intl/link';
 import React from 'react';
-import { useTranslations } from "next-intl";
 
 const LanguageSelector = () => {
   return (
@@ -15,4 +14,4 @@ const LanguageSelector = () => {
   )
 }
 
-export default LanguageSelector
+export default LanguageSelector;

@@ -1,10 +1,23 @@
 {
-    "Index": {
+    "Header": {
       "homeLink": "Головна",
       "aboutLink": "Про мене",
       "projectsLink": "Проекти",
       "skillsLink": "Навички",
       "experienceLink": "Досвід",
       "contactLink": "Контакти"
+    },
+    "Hero": {
+      "textStart": "Привіт! Мене звати",
+      "name": "Руслан",
+      "textMiddle": "Маючи за плечима 3 роки досвіду, я спеціалізуюся на ",
+      "specialization": "front-end розробці",
+      "textTech": "використовуючи ",
+      "tech": "React (Next.js) & TypeScript",
+      "textEnd": "Я прагну створити",
+      "experience": "цікавий цифровий досвід",
+      "buttonContact": "Зв’язатися зі мною",
+      "buttonCV": "Завантажити CV"
     }
+    
   }
