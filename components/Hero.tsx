@@ -12,7 +12,7 @@ import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 const Hero = () => {
   const t = useTranslations("Hero");
 
-  const handleScroll = () => {}
+  const handleScroll = () => {};
 
   return (
     <section className="mb-28 max-w-[50rem] text-ellipsis sm:mb-0">
@@ -45,46 +45,46 @@ const Hero = () => {
         </div>
       </div>
 
-      <motion.p 
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+      <motion.p
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-center"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        {t('textStart')} <strong>{t('name')}</strong>. {t('textMiddle')}
-        <strong> {t('specialization')}</strong> {t('textTech')}
-        <u>{t('tech')}</u>. {t('textEnd')} <em>{t('experience')}</em>.
+        {t("textStart")} <strong>{t("name")}</strong>. {t("textMiddle")}
+        <strong> {t("specialization")}</strong> {t("textTech")}
+        <u>{t("tech")}</u>. {t("textEnd")} <em>{t("experience")}</em>.
       </motion.p>
 
-      <motion.div 
+      <motion.div
         className="flex gap-6 flex-col sm:flex-row items-center justify-center px-4"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
-        >
-        <CustomButton 
-            title={t('buttonContact')}
-            containerStyle="bg-gray-950 text-white px-7 py-3 hover:scale-105 transition"
-            url="/#contact"
-            icon={<FiArrowUpRight />}            
+      >
+        <CustomButton
+          title={t("buttonContact")}
+          containerStyle="bg-gray-950 text-white px-7 py-3 hover:scale-105 transition"
+          url="/#contact"
+          icon={<FiArrowUpRight className='opacity-70' />}
         />
-        <CustomButton 
-            title={t('buttonCV')}
-            containerStyle="bg-white text-grey-950 font-medium px-7 py-3 hover:scale-105 transition"
-            icon={<FiDownload />}            
+
+        <CustomButton
+          title={t("buttonCV")}
+          containerStyle="bg-white text-grey-950 font-medium px-7 py-3 hover:scale-105 transition border border-gray-300"
+          icon={<FiDownload className='opacity-70' />}
         />
-        <CustomButton 
-            containerStyle="bg-white text-grey-950 text-2xl font-medium px-3 py-3 hover:scale-110 transition"
-            icon={<FaLinkedin />}
-            external={true}
-            url="https://www.linkedin.com/in/ruslan-yeremin-786785281/"            
+        <CustomButton
+          containerStyle="bg-white text-grey-950 text-2xl font-medium px-3 py-3 hover:scale-110 transition border border-gray-300"
+          icon={<FaLinkedin />}
+          external={true}
+          url="https://www.linkedin.com/in/ruslan-yeremin-786785281/"
         />
-        <CustomButton 
-            containerStyle="bg-white text-grey-950 font-medium text-2xl px-3 py-3 hover:scale-110 transition"
-            icon={<FaGithubSquare />} 
-            external={true}
-            url="https://github.com/ruslan-yeromin"           
+        <CustomButton
+          containerStyle="bg-white text-grey-950 font-medium text-2xl px-3 py-3 hover:scale-110 transition border border-gray-300"
+          icon={<FaGithubSquare />}
+          external={true}
+          url="https://github.com/ruslan-yeromin"
         />
-        
       </motion.div>
     </section>
   );
