@@ -8,16 +8,51 @@
       "contactLink": "Contact" 
     },
     "Hero": {
-      "textStart": "Hi there! I'm",
-      "name": "Ruslan",
-      "textMiddle": "With 3 years under my belt, I specialize in",
+      "textStart": "Hi there!",
+      "name": " I'm Ruslan",
+      "textMiddle": "With 3 years experience, I specialize in",
       "specialization": "front-end development",
       "textTech": "using ",
       "tech": "React (Next.js) & TypeScript",
-      "textEnd": "I aim to create",
-      "experience": "engaging digital experiences",
       "buttonContact": "Contact me",
       "buttonCV": "Download CV"
+    },
+    "About": {
+      "title": "About me",
+      "firstParagraph-01": "I'm a ",
+      "firstParagraph-02": "Ukrainian Front-end developer. ",
+      "firstParagraph-03": "Although I studied Entrepreneurship, my heart has always been drawn to ",
+      "firstParagraph-04": "computer science",
+      "firstParagraph-05": ". My journey into web development started with simple website builders, advanced to CMS platforms like Opencart and WordPress, and culminated in mastering ",
+      "firstParagraph-06": "HTML, CSS, and JS",
+      "firstParagraph-07": ". This drive continued to grow, leading me to explore ",
+      "firstParagraph-08": "React, Next.js, and TypeScript",
+      "firstParagraph-09": " — the next frontier in my web development journey.",
+    
+      "secondParagraph-01": "My expertise isn't confined just to the front end. For various projects with diverse backend needs, I adeptly employed ",
+      "secondParagraph-02": "PHP, Python, and Django",
+      "secondParagraph-03": ", always choosing the optimal tool for each unique requirement. Python also serves me well, allowing me to create utility ",
+      "secondParagraph-04": "scripts and chatbots",
+      "secondParagraph-05": " that further streamline my development process.",
+    
+      "thirdParagraph-01": "I remain entranced by the ",
+      "thirdParagraph-02": "dynamic realm of front-end development",
+      "thirdParagraph-03": ", with its relentless innovations and new frameworks. Open to all forms of collaboration, from ",
+      "thirdParagraph-04": "individual projects",
+      "thirdParagraph-05": " to ",
+      "thirdParagraph-06": "full-time roles",
+      "thirdParagraph-07": ", I'm also ",
+      "thirdParagraph-08": "ready to relocate",
+      "thirdParagraph-09": " for the perfect fit."
+    },
+    "Projects": {
+      "projectTitleOne": "Project 1",
+      "projectTitleTwo": "Project 2",
+      "projectTitleThree": "Project 3",
+      "projectDescOne": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut labore et dolore magna aliqua ut labore et dolore magna aliqua.",
+      "projectDescTwo": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut labore et dolore magna aliqua ut labore et dolore magna aliqua.",
+      "projectDescThree": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut labore et dolore magna aliqua ut labore et dolore magna aliqua."
     }
+    
     
   }

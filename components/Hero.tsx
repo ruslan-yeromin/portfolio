@@ -45,15 +45,15 @@ const Hero = () => {
         </div>
       </div>
 
-      <motion.p
+      <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-center"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        {t("textStart")} <strong>{t("name")}</strong>. {t("textMiddle")}
+        {t("textStart")} <br/> <strong>{t("name")}</strong>. {t("textMiddle")}
         <strong> {t("specialization")}</strong> {t("textTech")}
-        <u>{t("tech")}</u>. {t("textEnd")} <em>{t("experience")}</em>.
-      </motion.p>
+        <u>{t("tech")}</u>.
+      </motion.h1>
 
       <motion.div
         className="flex gap-6 flex-col sm:flex-row items-center justify-center px-4"

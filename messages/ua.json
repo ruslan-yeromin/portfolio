@@ -8,16 +8,50 @@
       "contactLink": "Контакти"
     },
     "Hero": {
-      "textStart": "Привіт! Мене звати",
-      "name": "Руслан",
+      "textStart": "Привіт!",
+      "name": "Мене звати Руслан",
       "textMiddle": "Маючи за плечима 3 роки досвіду, я спеціалізуюся на ",
       "specialization": "front-end розробці",
       "textTech": "використовуючи ",
       "tech": "React (Next.js) & TypeScript",
-      "textEnd": "Я прагну створити",
-      "experience": "цікавий цифровий досвід",
       "buttonContact": "Зв’язатися зі мною",
       "buttonCV": "Завантажити CV"
+    },
+    "About": {
+      "title": "Про мене",
+      "firstParagraph-01": "Я ",
+      "firstParagraph-02": "Український Front-end розробник. ",
+      "firstParagraph-03": "Незважаючи на те, що я навчався підприємництву, я завжди захоплювався ",
+      "firstParagraph-04": "комп'ютерними наукам. ",
+      "firstParagraph-05": "Моя подорож у світ веб-розробки почалася з простих конструкторів сайтів, перейшла на CMS-платформи, такі як Opencart та WordPress, і завершилася освоєнням ",
+      "firstParagraph-06": "HTML, CSS та JS. ",
+      "firstParagraph-07": "Цей інтерес продовжував зростати, спонукаючи мене досліджувати ",
+      "firstParagraph-08": "React, Next.js та TypeScript",
+      "firstParagraph-09": " — наступний етап у моїй кар'єрі веб-розробника.",
+    
+      "secondParagraph-01": "Мій досвід не обмежується лише фронтендом. Для різних проектів з різноманітними потребами у backend я вдало використовував ",
+      "secondParagraph-02": "PHP, Python та Django, ",
+      "secondParagraph-03": "завжди обираючи оптимальний інструмент для кожного конкретного завдання. Python також допомагає мені, дозволяючи створювати корисні ",
+      "secondParagraph-04": "скрипти та чат-ботів",
+      "secondParagraph-05": ", які спрощують мій процес розробки.",
+    
+      "thirdParagraph-01": "Мене продовжує захоплювати ",
+      "thirdParagraph-02": "динамічний світ фронтенд-розробки",
+      "thirdParagraph-03": " з його нескінченними інноваціями та новими фреймворками. Я відкритий до будь-якої форми співпраці, від ",
+      "thirdParagraph-04": "окремих проектів",
+      "thirdParagraph-05": " до ",
+      "thirdParagraph-06": "full-time позиції. ",
+      "thirdParagraph-07": "Також я готовий до ",
+      "thirdParagraph-08": "переїзду",
+      "thirdParagraph-09": " у разі ідеальної пропозиції."
+    },
+    "Projects": {
+      "projectTitleOne": "Проект 1",
+      "projectTitleTwo": "Проект 2",
+      "projectTitleThree": "Проект 3",
+      "projectDescOne": "Проект 1 деталі",
+      "projectDescTwo": "Проект 2 деталі",
+      "projectDescThree": "Проект 3 деталі"
     }
     
   }

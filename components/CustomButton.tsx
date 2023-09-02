@@ -13,7 +13,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
 }) => {
   
   const content = (
-    <span className={`flex justify-center items-center gap-2 flex-1`}>
+    <span className={`flex justify-center items-center gap-2`}>
       {title}
       {icon && <span>{icon}</span>}
     </span>

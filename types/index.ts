@@ -8,3 +8,7 @@ export interface CustomButtonProps {
     url?: string;
     external?: boolean;
 }
+
+export interface SectionHeadingProps {
+    title: string;
+}
