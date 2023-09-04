@@ -1,18 +1,24 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslations } from "next-intl";
 import SectionTitle from "./SectionTitle";
 import { motion } from "framer-motion";
+import { useScrollSection } from "@/types/hooks";
 
 const AboutMe = () => {
   const t = useTranslations("About");
+  const { ref } = useScrollSection("About", 0.5);
+
+  
   return (
     <motion.section
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+      ref={ref}
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
+      id="about"
     >
       <SectionTitle title={t("title")} />
       <p className="mb-4">

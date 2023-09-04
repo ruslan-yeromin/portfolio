@@ -1,12 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import CustomButton from "./CustomButton";
 import { FiArrowUpRight, FiDownload } from "react-icons/fi";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { useScrollSection } from "@/types/hooks";
 
 
 const Hero = () => {
@@ -14,8 +15,11 @@ const Hero = () => {
 
   const handleScroll = () => {};
 
+  const { ref } = useScrollSection("Home", 0.5);
+
+
   return (
-    <section className="mb-28 max-w-[50rem] text-ellipsis sm:mb-0">
+    <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-ellipsis sm:mb-0 scroll-mt-28">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
