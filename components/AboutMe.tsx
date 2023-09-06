@@ -8,7 +8,7 @@ import { useScrollSection } from "@/types/hooks";
 
 const AboutMe = () => {
   const t = useTranslations("About");
-  const { ref } = useScrollSection("About", 0.5);
+  const { ref } = useScrollSection("About", 1);
 
   
   return (

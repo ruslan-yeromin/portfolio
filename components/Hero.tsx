@@ -15,11 +15,11 @@ const Hero = () => {
 
   const handleScroll = () => {};
 
-  const { ref } = useScrollSection("Home", 0.5);
+  const { ref } = useScrollSection("Home", 0.75);
 
 
   return (
-    <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-ellipsis sm:mb-0 scroll-mt-28">
+    <section ref={ref} id="home" className="mb-30 max-w-[50rem] text-ellipsis sm:mb-0 scroll-mt-28">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
