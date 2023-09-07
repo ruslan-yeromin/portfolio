@@ -2,10 +2,10 @@ import React from 'react';
 import Header from '@/components/Header';
 import './globals.css';
 import type { Metadata } from 'next';
-import { useLocale } from 'next-intl';
-import { NextIntlClientProvider } from 'next-intl';
+import { useLocale, NextIntlClientProvider } from 'next-intl';
 import LanguageSelector from '@/components/LanguageSelector';
 import ActiveSectionContextProvider from '@/context/active-section-context';
+
 
 
 
@@ -17,13 +17,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const locale = useLocale();
 
-  // Загрузка сообщений для текущей локали
   let messages;
   try {
-    messages = require(`@/messages/${locale}.json`); // Если используете Webpack 5, можете использовать импорт вместо require.
+    messages = require(`@/messages/${locale}.json`);
   } catch (error) {
     console.error("Error loading messages for locale:", locale, error);
-    // Вы можете добавить дополнительную обработку ошибок здесь, если это необходимо.
   }
 
   const fontClass = locale === 'en' ? 'font-en' : 'font-ua'

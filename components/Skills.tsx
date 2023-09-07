@@ -15,7 +15,7 @@ const fadeInAnimation = {
         opacity: 1,
         y: 0,
         transition: {
-            delay: 0.1 * index,
+            delay: 0.05 * index,
         },
     }),
 }
@@ -25,7 +25,7 @@ const Skills = () => {
     const { ref } = useScrollSection("Skills");
 
   return (
-    <section ref={ref} className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'>
+    <section id='skills' ref={ref} className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'>
         <SectionTitle title="My skills" />
         <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>
             {

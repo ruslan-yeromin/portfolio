@@ -11,3 +11,7 @@ body.font-en {
 body.font-ua {
     font-family: 'Arsenal', sans-serif;
 }
+
+html {
+  --line-color: #e5e7eb;
+}

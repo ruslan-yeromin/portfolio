@@ -52,6 +52,17 @@
       "projectDescOne": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut labore et dolore magna aliqua ut labore et dolore magna aliqua.",
       "projectDescTwo": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut labore et dolore magna aliqua ut labore et dolore magna aliqua.",
       "projectDescThree": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut labore et dolore magna aliqua ut labore et dolore magna aliqua."
+    },
+    "Experience": {
+      "titleEducation": "Education at Alfred Nobel University",
+      "titleFrontend": "Front-End Developer",
+      "titleBackend": "Back-End Developer",
+      "titleReact": "React (Next.JS) & Typescript Developer",
+      "location": "Ukraine",
+      "descEducation": "During my studies at the university, I became interested in computer science and started learning various CMS platforms, HTML, CSS, and JS.",
+      "descFrontend": "While deepening my knowledge of HTML, CSS, and JS, I discovered React. Its component-based approach allowed me to build more organized and efficient web applications, setting them apart from traditional websites.",
+      "descBackend": "Recognizing the need to use the backend in my projects, I delved into PHP and Python to solve various backend tasks while ensuring seamless integration with the frontend.",
+      "descReact": "Transitioning to freelance, my tech stack evolved to include React, Next.js, TypeScript, Tailwind, Prisma, and MongoDB. I'm open to full-time opportunities and willing to relocate for the right role."
     }
     
     
