@@ -86,18 +86,20 @@ const Hero = () => {
           containerStyle="bg-white text-grey-950 font-medium px-7 py-3 hover:scale-105 transition border border-gray-300 dark:bg-white/10"
           icon={<FiDownload className='opacity-70' />}
         />
-        <LinkButton
-          containerStyle="bg-white text-grey-950 text-2xl font-medium px-3 py-3 hover:scale-110 transition border border-gray-300 dark:bg-white/10"
-          icon={<FaLinkedin />}
-          external={true}
-          url="https://www.linkedin.com/in/ruslan-yeremin-786785281/"
-        />
-        <LinkButton
-          containerStyle="bg-white text-grey-950 font-medium text-2xl px-3 py-3 hover:scale-110 transition border border-gray-300 dark:bg-white/10"
-          icon={<FaGithubSquare />}
-          external={true}
-          url="https://github.com/ruslan-yeromin"
-        />
+        <div className="flex gap-2 ">
+          <LinkButton
+            containerStyle="bg-white text-grey-950 text-2xl font-medium px-3 py-3 hover:scale-110 transition border border-gray-300 dark:bg-white/10"
+            icon={<FaLinkedin />}
+            external={true}
+            url="https://www.linkedin.com/in/ruslan-yeremin-786785281/"
+          />
+          <LinkButton
+            containerStyle="bg-white text-grey-950 font-medium text-2xl px-3 py-3 hover:scale-110 transition border border-gray-300 dark:bg-white/10"
+            icon={<FaGithubSquare />}
+            external={true}
+            url="https://github.com/ruslan-yeromin"
+          />
+        </div>
       </motion.div>
     </section>
   );
