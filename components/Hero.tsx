@@ -1,13 +1,16 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import CustomButton from "./CustomButton";
 import { FiArrowUpRight, FiDownload } from "react-icons/fi";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { useScrollSection } from "@/types/hooks";
+import { useActiveSection } from "@/context/active-section-context";
+import LinkButton from "./LinkButton";
+import Button from "./Button";
 
 
 const Hero = () => {
@@ -16,6 +19,7 @@ const Hero = () => {
   const handleScroll = () => {};
 
   const { ref } = useScrollSection("Home", 0.75);
+  const { setActiveSectionByName, setTimeOfLastClick } = useActiveSection();
 
 
   return (
@@ -65,26 +69,31 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
       >
-        <CustomButton
-          title={t("buttonContact")}
-          containerStyle="bg-gray-950 text-white px-7 py-3 hover:scale-105 transition"
-          url="/#contact"
-          icon={<FiArrowUpRight className='opacity-70' />}
-        />
+        <LinkButton
+          url="#contact"
+          containerStyle="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          handleClick={() => {
+            setActiveSectionByName("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
+        >
+          Contact me{" "}
+          <FiArrowUpRight className="inline-block ml-1 text-xl opacity-70" />
+        </LinkButton>
 
-        <CustomButton
+        <Button
           title={t("buttonCV")}
-          containerStyle="bg-white text-grey-950 font-medium px-7 py-3 hover:scale-105 transition border border-gray-300"
+          containerStyle="bg-white text-grey-950 font-medium px-7 py-3 hover:scale-105 transition border border-gray-300 dark:bg-white/10"
           icon={<FiDownload className='opacity-70' />}
         />
-        <CustomButton
-          containerStyle="bg-white text-grey-950 text-2xl font-medium px-3 py-3 hover:scale-110 transition border border-gray-300"
+        <LinkButton
+          containerStyle="bg-white text-grey-950 text-2xl font-medium px-3 py-3 hover:scale-110 transition border border-gray-300 dark:bg-white/10"
           icon={<FaLinkedin />}
           external={true}
           url="https://www.linkedin.com/in/ruslan-yeremin-786785281/"
         />
-        <CustomButton
-          containerStyle="bg-white text-grey-950 font-medium text-2xl px-3 py-3 hover:scale-110 transition border border-gray-300"
+        <LinkButton
+          containerStyle="bg-white text-grey-950 font-medium text-2xl px-3 py-3 hover:scale-110 transition border border-gray-300 dark:bg-white/10"
           icon={<FaGithubSquare />}
           external={true}
           url="https://github.com/ruslan-yeromin"

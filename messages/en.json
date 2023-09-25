@@ -63,6 +63,14 @@
       "descFrontend": "While deepening my knowledge of HTML, CSS, and JS, I discovered React. Its component-based approach allowed me to build more organized and efficient web applications, setting them apart from traditional websites.",
       "descBackend": "Recognizing the need to use the backend in my projects, I delved into PHP and Python to solve various backend tasks while ensuring seamless integration with the frontend.",
       "descReact": "Transitioning to freelance, my tech stack evolved to include React, Next.js, TypeScript, Tailwind, Prisma, and MongoDB. I'm open to full-time opportunities and willing to relocate for the right role."
+    },
+    "Contact": {
+      "title": "Contact me",
+      "text-before": "Please contact me directly at ",
+      "text-after": " or use the form below",
+      "email": "Your email",
+      "message": "Your message",
+      "button": "Submit"
     }
     
     

@@ -31,7 +31,7 @@ const Skills = () => {
             {
                 skillsData.map((skill, index) => (
                     <motion.li 
-                        className='bg-white border border-black/[0.1] rounded-xl px-5 py-3 cursor-pointer hover:bg-blue-50 transition' 
+                        className='bg-white border border-black/[0.1] rounded-xl px-5 py-3 cursor-pointer hover:bg-blue-50 transition dark:bg-white/10 dark:text-white/80' 
                         key={index}
                         variants={fadeInAnimation}
                         initial='initial'
