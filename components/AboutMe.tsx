@@ -23,7 +23,7 @@ const AboutMe = () => {
       <SectionTitle title={t("title")} />
       <p className="mb-4">
         {t("firstParagraph-01")}
-        <b className="text-blue-900">{t("firstParagraph-02")}</b>
+        <b className="text-blue-900 dark:text-blue-900">{t("firstParagraph-02")}</b>
         {t("firstParagraph-03")}
         <u>{t("firstParagraph-04")}</u>
         {t("firstParagraph-05")}

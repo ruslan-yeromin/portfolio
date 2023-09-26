@@ -16,8 +16,6 @@ import Button from "./Button";
 const Hero = () => {
   const t = useTranslations("Hero");
 
-  const handleScroll = () => {};
-
   const { ref } = useScrollSection("Home", 0.75);
   const { setActiveSectionByName, setTimeOfLastClick } = useActiveSection();
 
