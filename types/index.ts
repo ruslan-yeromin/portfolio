@@ -22,3 +22,19 @@ export interface ButtonProps {
 export interface SectionHeadingProps {
     title: string;
 }
+
+export interface FloatingButtonProps {
+    angle: number;
+    delay: number;
+    type: 'link' | 'button';
+    locale?: string;
+    icon?: JSX.Element;
+    title?: string;
+    onClick?: () => void;
+  }
+  
+  export interface MainButtonProps {
+    toggleTheme: () => void;
+    theme: string;
+  }
+  

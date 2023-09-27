@@ -9,6 +9,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "@/components/Footer";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import ThemeContextProvider from "@/context/theme-context";
+import FloatingButton from "@/components/SettingsButton";
 
 export const metadata: Metadata = {
   title: "Portfolio | Front End Developer",
@@ -42,10 +43,9 @@ export default function RootLayout({
               <div className="fixed top-0 left-0 h-screen w-screen z-[-1] gradient-bg dark:gradient-bg-dark"></div>
               <div className="fixed top-0 left-0 h-screen w-screen z-[-1]"></div>
               <Header />
-              <LanguageSelector />
               {children}
               <Toaster position="bottom-left" />
-              <ThemeSwitcher />
+              <FloatingButton />
               <Footer />
             </NextIntlClientProvider>
           </ActiveSectionContextProvider>
