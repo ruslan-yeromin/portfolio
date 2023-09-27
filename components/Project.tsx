@@ -72,3 +72,5 @@ const Project: React.FC<ProjectProps> = memo(
 );
 
 export default Project;
+Project.displayName = 'Project';
+

@@ -8,11 +8,24 @@ import { LinkProps, links } from "@/utils/data";
 import clsx from "clsx";
 import { useActiveSection } from "@/context/active-section-context";
 
-const NavItem: React.FC<
-  LinkProps & { isActive: boolean; setActiveSectionByName: (sectionName: string) => void }
-> = memo(({ id, name, hash, isActive, setActiveSectionByName }) => {
+const NavItemComponent: React.FC<
+  LinkProps & {
+    isActive: boolean;
+    setActiveSectionByName: (sectionName: string) => void;
+  }
+> = ({ id, name, hash, isActive, setActiveSectionByName }) => {
   const t = useTranslations("Header");
-  const {setTimeOfLastClick} = useActiveSection();
+  const { setTimeOfLastClick } = useActiveSection();
+  const getLinkClassNames = (isActive: boolean) => {
+    return clsx(
+      "flex w-full items-center justify-center font-semibold px-3 py-3 hover:text-gray-950 transition",
+      {
+        "dark:text-gray-500 dark:hover:text-gray-300": !isActive,
+        "dark:text-gray-200": isActive,
+      }
+    );
+  };
+
   return (
     <motion.li
       className={clsx("h-3/4 flex items-center justify-center shrink-0", {
@@ -24,13 +37,7 @@ const NavItem: React.FC<
     >
       <Link
         href={hash}
-        className={clsx(
-          "flex w-full items-center justify-center font-semibold px-3 py-3 hover:text-gray-950 transition",
-          {
-            "dark:text-gray-500 dark:hover:text-gray-300": !isActive,
-            "dark:text-gray-200": isActive
-          }
-        )}
+        className={getLinkClassNames(isActive)}
         onClick={() => {
           setActiveSectionByName(name);
           setTimeOfLastClick(Date.now());
@@ -38,24 +45,26 @@ const NavItem: React.FC<
       >
         {`${t(id)}`}
         {isActive && (
-          <motion.span 
-            className="bg-gray-200 rounded-full absolute inset-0 -z-10 dark:bg-gray-800 "
+          <motion.span
+            className="bg-gray-200 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
             layoutId="activeSection"
             transition={{
               type: "spring",
               stiffness: 500,
               damping: 30,
             }}
-            ></motion.span>
+          ></motion.span>
         )}
       </Link>
     </motion.li>
   );
-});
+};
 
-const Header: React.FC = () => {
-  
-  const { activeSection, setActiveSectionByName } =  useActiveSection();
+const NavItem = memo(NavItemComponent);
+NavItem.displayName = "NavItem";
+
+const HeaderComponent: React.FC = () => {
+  const { activeSection, setActiveSectionByName } = useActiveSection();
 
   return (
     <header className="z-[999] relative">
@@ -80,5 +89,8 @@ const Header: React.FC = () => {
     </header>
   );
 };
+
+const Header = memo(HeaderComponent);
+Header.displayName = "Header";
 
 export default Header;
