@@ -53,10 +53,10 @@ const FloatingButton: React.FC<FloatingButtonProps> = ({
 
   return type === "link" ? (
     <Link href="/" locale={locale!}>
-      <motion.a {...commonProps}>{title}</motion.a>
+      <motion.a aria-label="change language" {...commonProps}>{title}</motion.a>
     </Link>
   ) : (
-    <motion.button {...commonProps} onClick={onClick}>
+    <motion.button aria-label="dark theme" {...commonProps} onClick={onClick}>
       {icon}
     </motion.button>
   );

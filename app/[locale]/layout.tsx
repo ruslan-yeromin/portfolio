@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "@/components/Header";
 import "./globals.css";
 import type { Metadata } from "next";
@@ -8,6 +8,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "@/components/Footer";
 import ThemeContextProvider from "@/context/theme-context";
 import FloatingButton from "@/components/SettingsButton";
+import Head from 'next/head'; // <-- Добавьте эту строку
 
 export const metadata: Metadata = {
   title: "Portfolio | Front End Developer",
@@ -31,7 +32,13 @@ export default function RootLayout({
   const fontClass = locale === "en" ? "font-en" : "font-ua";
 
   return (
-    <html lang={locale} className="!scroll-smooth">
+    <>
+      <Head>
+        <html lang={locale} className="!scroll-smooth" />
+        <link rel="alternate" hrefLang="en" href="https://portfolio-xcvg.vercel.app/" />
+        <link rel="alternate" hrefLang="ua" href="https://portfolio-xcvg.vercel.app/ua" />
+        {/* другие элементы внутри head */}
+      </Head>
       <body
         className={`${fontClass} bg-gray-50  dark:text-gray-100 dark:text-opacity-90 text-gray-950 relative pt-28 sm:pt-36`}
       >
@@ -49,6 +56,6 @@ export default function RootLayout({
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>
-    </html>
+    </>
   );
 }
