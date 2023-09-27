@@ -8,20 +8,20 @@ import { useScrollSection } from "@/types/hooks";
 
 const AboutMe = () => {
   const t = useTranslations("About");
-  const { ref } = useScrollSection("About", 1);
+  const { ref } = useScrollSection("About", 0.75);
 
   
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[45rem] 2xl:max-w-[70rem] 2xl:mt-[10rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
     >
       <SectionTitle title={t("title")} />
-      <p className="mb-4">
+      <p className="mb-4 2xl:text-2xl">
         {t("firstParagraph-01")}
         <b className="text-blue-900 dark:text-blue-900">{t("firstParagraph-02")}</b>
         {t("firstParagraph-03")}
@@ -33,7 +33,7 @@ const AboutMe = () => {
         {t("firstParagraph-09")}
       </p>
 
-      <p className="mb-4">
+      <p className="mb-4 2xl:text-2xl">
         {t("secondParagraph-01")}
         <b>{t("secondParagraph-02")}</b>
         {t("secondParagraph-03")}
@@ -41,7 +41,7 @@ const AboutMe = () => {
         {t("secondParagraph-05")}
       </p>
 
-      <p>
+      <p className="2xl:text-2xl">
         {t("thirdParagraph-01")}
         <b>{t("thirdParagraph-02")}</b>
         {t("thirdParagraph-03")}

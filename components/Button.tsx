@@ -10,7 +10,7 @@ const LinkButton = ({
   children
 }: ButtonProps) => {
   const content = (
-    <span className="flex justify-center items-center gap-2">
+    <span className="flex justify-center items-center gap-2 2xl:text-2xl">
       {title}
       {icon && <span>{icon}</span>}
     </span>

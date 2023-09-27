@@ -11,7 +11,7 @@ const Projects: React.FC = () => {
 
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
+    <section ref={ref} id="projects" className="scroll-mt-28 mb-28 2xl:mt-20 2xl:max-w-[70rem]">
       <SectionTitle title="Projects" />
 
       <div>

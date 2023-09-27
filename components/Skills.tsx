@@ -25,7 +25,7 @@ const Skills = () => {
     const { ref } = useScrollSection("Skills");
 
   return (
-    <section id='skills' ref={ref} className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'>
+    <section id='skills' ref={ref} className='mb-28 2xl:mt-28 max-w-[53rem] 2xl:max-w-[70rem] scroll-mt-28 text-center sm:mb-40'>
         <SectionTitle title="My skills" />
         <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>
             {

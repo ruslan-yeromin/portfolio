@@ -21,7 +21,7 @@ const Hero = () => {
 
 
   return (
-    <section ref={ref} id="home" className="mb-30 max-w-[50rem] text-ellipsis sm:mb-0 scroll-mt-28">
+    <section ref={ref} id="home" className="mb-30 2xl:mb-[10rem] 2xl:mt-[20rem] max-w-[50rem] 2xl:max-w-[70rem] text-ellipsis sm:mb-0 scroll-mt-[30rem]">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -52,7 +52,7 @@ const Hero = () => {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-center"
+        className="mb-10 mt-4 px-4 text-2xl 2xl:text-[3rem] font-medium !leading-[1.5] sm:text-4xl text-center"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -69,7 +69,7 @@ const Hero = () => {
       >
         <LinkButton
           url="#contact"
-          containerStyle="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          containerStyle="group rounded-full bg-gray-900 text-white px-7 py-3 flex items-center gap-2 outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           handleClick={() => {
             setActiveSectionByName("Contact");
             setTimeOfLastClick(Date.now());
@@ -86,13 +86,13 @@ const Hero = () => {
         />
         <div className="flex gap-2 ">
           <LinkButton
-            containerStyle="bg-white text-grey-950 text-2xl font-medium px-3 py-3 hover:scale-110 transition border border-gray-300 dark:bg-white/10"
+            containerStyle="bg-white text-grey-950 text-2xl font-medium !px-3 !py-3 hover:scale-110 transition border border-gray-300 dark:bg-white/10"
             icon={<FaLinkedin />}
             external={true}
             url="https://www.linkedin.com/in/ruslan-yeremin-786785281/"
           />
           <LinkButton
-            containerStyle="bg-white text-grey-950 font-medium text-2xl px-3 py-3 hover:scale-110 transition border border-gray-300 dark:bg-white/10"
+            containerStyle="bg-white text-grey-950 font-medium text-2xl !px-3 !py-3 hover:scale-110 transition border border-gray-300 dark:bg-white/10"
             icon={<FaGithubSquare />}
             external={true}
             url="https://github.com/ruslan-yeromin"

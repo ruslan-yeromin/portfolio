@@ -3,8 +3,6 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
 import { useTranslations } from "next-intl";
-import CustomButton from "./CustomButton";
-import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useScrollSection } from "@/types/hooks";
 import { sendEmail } from "@/actions/sendEmail";
@@ -21,7 +19,7 @@ const Contact = () => {
     <motion.section
         ref={ref}
       id="contact"
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      className="mb-20 sm:mb-28 w-[min(100%,60rem)] text-center"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}

@@ -3,11 +3,9 @@ import Header from "@/components/Header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { useLocale, NextIntlClientProvider } from "next-intl";
-import LanguageSelector from "@/components/LanguageSelector";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/Footer";
-import ThemeSwitcher from "@/components/ThemeSwitcher";
 import ThemeContextProvider from "@/context/theme-context";
 import FloatingButton from "@/components/SettingsButton";
 
